@@ -71,5 +71,5 @@ def extract_watermark_dct(watermarked_image_path, original_image_path):
     return extracted_watermark
 
 # Extract the watermark from the screenshot
-extracted_watermark = extract_watermark_dct('screenshot.jpg', 'input.jpg')
-cv2.imwrite('extracted_watermark.jpg', extracted_watermark)
+extracted_watermark = extract_watermark_dct('watermarked_output.jpg', 'input.jpg')
+cv2.imwrite('watermarked_output.jpg', extracted_watermark)
